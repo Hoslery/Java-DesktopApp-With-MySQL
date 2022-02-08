@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="740.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.OrganizationController">
+   <children>
+      <Label layoutX="24.0" layoutY="311.0" prefHeight="20.0" prefWidth="296.0" text="Поиск организации по номеру телефона: ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="65.0" prefHeight="20.0" prefWidth="186.0" text="Наименование организации">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="100.0" prefHeight="20.0" prefWidth="122.0" text="Местоположение">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="136.0" prefHeight="20.0" prefWidth="164.0" text="Профиль деятельности">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="orgNameText" alignment="TOP_CENTER" layoutX="220.0" layoutY="62.0" prefHeight="26.0" prefWidth="206.0" promptText="Наименование">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="countryNameText" alignment="TOP_CENTER" layoutX="151.0" layoutY="98.0" promptText="Страна">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cityNameText" alignment="TOP_CENTER" layoutX="313.0" layoutY="98.0" promptText="Город">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="streetNameText" alignment="TOP_CENTER" layoutX="474.0" layoutY="97.0" prefHeight="26.0" prefWidth="234.0" promptText="Улица, дом">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="activityText" alignment="TOP_CENTER" layoutX="203.0" layoutY="134.0" prefHeight="26.0" prefWidth="206.0" promptText="Профиль">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="searchNumberBtn" layoutX="27.0" layoutY="189.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Поиск">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutY="262.0" prefHeight="6.0" prefWidth="740.0" style="-fx-border-color: #000000;" />
+      <Label layoutX="24.0" layoutY="31.0" prefHeight="20.0" prefWidth="296.0" text="Поиск номера по заданным параметрам: ">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="numberText" alignment="TOP_CENTER" layoutX="151.0" layoutY="359.0" prefHeight="26.0" prefWidth="158.0" promptText="Номер">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </TextField>
+      <Label layoutX="24.0" layoutY="363.0" prefHeight="20.0" prefWidth="122.0" text="Номер телефона">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="searchOrgBtn" layoutX="27.0" layoutY="429.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Поиск">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutX="383.0" layoutY="261.0" maxWidth="6.0" minWidth="-Infinity" orientation="VERTICAL" prefHeight="290.0" prefWidth="7.0" style="-fx-border-color: #000000;" />
+      <Button fx:id="showAllOrgBtn" layoutX="443.0" layoutY="331.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" text="Просмотреть все организации">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="showAllNumBtn" layoutX="443.0" layoutY="414.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="250.0" text="Просмотреть все номера">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

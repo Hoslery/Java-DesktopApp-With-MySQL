@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="451.0" prefWidth="1403.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AllOrgController">
+   <children>
+      <TableView fx:id="organizationsTable" layoutX="20.0" layoutY="37.0" prefHeight="360.0" prefWidth="1348.0">
+        <columns>
+          <TableColumn fx:id="orgIdColumn" prefWidth="41.600006103515625" text="Id" />
+          <TableColumn fx:id="orgNameColumn" prefWidth="162.3999900817871" text="Наим. орг." />
+            <TableColumn fx:id="orgActivityColumn" prefWidth="253.59999084472656" text="Профиль деят." />
+            <TableColumn fx:id="orgEmailColumn" prefWidth="171.199951171875" text="Почта" />
+            <TableColumn fx:id="orgDirSurColumn" minWidth="8.0" prefWidth="156.79998779296875" text="Фамилия директора" />
+            <TableColumn fx:id="orgCountryColumn" minWidth="0.0" prefWidth="147.20001220703125" text="Страна" />
+            <TableColumn fx:id="orgCityColumn" prefWidth="162.39996337890625" text="Город" />
+            <TableColumn fx:id="orgStreetColumn" prefWidth="250.4000244140625" text="Улица/дом" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

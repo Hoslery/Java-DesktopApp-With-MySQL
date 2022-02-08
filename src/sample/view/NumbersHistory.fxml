@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="354.0" prefWidth="675.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.NumHistoryController">
+   <children>
+      <TableView fx:id="historyTable" layoutX="23.0" layoutY="91.0" prefHeight="200.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="29.600008010864258" text="Id" />
+          <TableColumn fx:id="nameOrgColumn" prefWidth="146.40002059936523" text="Наим. орг." />
+            <TableColumn fx:id="oldNumColumn" prefWidth="128.8000030517578" text="Старый номер" />
+            <TableColumn fx:id="newNumColumn" prefWidth="142.39999999999998" text="Новый номер" />
+            <TableColumn fx:id="dateColumn" prefWidth="179.19997558593752" text="Дата изменения" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

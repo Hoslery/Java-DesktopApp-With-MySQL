@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="696.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="basicInfTable" layoutX="14.0" layoutY="41.0" prefHeight="126.0" prefWidth="1170.0">
+        <columns>
+          <TableColumn fx:id="basicOrgIdCol" prefWidth="28.000000953674316" text="Id" />
+          <TableColumn fx:id="basicOrgNameCol" prefWidth="135.9999656677246" text="Наим. орг." />
+            <TableColumn fx:id="basicOrgActivCol" prefWidth="185.6000213623047" text="Профиль деят." />
+            <TableColumn fx:id="basicEmailCol" prefWidth="136.0" text="Email" />
+            <TableColumn fx:id="basicDirSurCol" prefWidth="154.40005493164062" text="Фамилия директора" />
+            <TableColumn fx:id="basicCountryCol" minWidth="9.5999755859375" prefWidth="125.5999755859375" text="Страна" />
+            <TableColumn fx:id="basicCityCol" prefWidth="149.5999755859375" text="Город" />
+            <TableColumn fx:id="basicStreetCol" prefWidth="254.4000244140625" text="Улица/дом" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="20.0" prefWidth="266.0" text="Основные сведения об организациях:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="192.0" prefHeight="20.0" prefWidth="242.0" text="Сведения о номерах организаций:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="numbersTable" layoutX="14.0" layoutY="222.0" prefHeight="156.0" prefWidth="447.0">
+        <columns>
+          <TableColumn fx:id="numbersOrgIdCol" prefWidth="28.000000953674316" text="Id" />
+          <TableColumn fx:id="numbersOrgNameCol" prefWidth="139.99999618530273" text="Наим. орг." />
+            <TableColumn fx:id="numbersNumCol" prefWidth="133.6000213623047" text="Номер телефона" />
+            <TableColumn fx:id="numbersFuncCol" minWidth="9.5999755859375" prefWidth="143.2" text="Функциональность" />
+        </columns>
+      </TableView>
+      <Label layoutX="667.0" layoutY="192.0" prefHeight="20.0" prefWidth="192.0" text="Сведения о прайс-листах:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="priceListTable" layoutX="667.0" layoutY="222.0" prefHeight="156.0" prefWidth="482.0">
+        <columns>
+          <TableColumn fx:id="priceOrgIdCol" prefWidth="27.20001220703125" text="Id" />
+          <TableColumn fx:id="priceOrgNameCol" prefWidth="133.60003662109375" text="Наим. орг." />
+            <TableColumn fx:id="ServiceCol" prefWidth="189.60003662109375" text="Услуга" />
+            <TableColumn fx:id="priceOfServiceCol" prefWidth="128.80002441406248" text="Цена" />
+        </columns>
+      </TableView>
+      <Label layoutX="525.0" layoutY="439.0" prefHeight="20.0" prefWidth="122.0" text="График работы:">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="timeOfWorkTable" layoutX="252.0" layoutY="473.0" prefHeight="206.0" prefWidth="706.0">
+        <columns>
+          <TableColumn fx:id="workOrgIdCol" prefWidth="28.79998779296875" text="Id" />
+          <TableColumn fx:id="workOrgNameCol" prefWidth="141.5999755859375" text="Наим. орг." />
+            <TableColumn fx:id="workDayCol" prefWidth="145.5999755859375" text="День недели" />
+            <TableColumn fx:id="workWeekendCol" minWidth="7.20001220703125" prefWidth="96.79998779296875" text="Выходной" />
+            <TableColumn fx:id="workStartCol" prefWidth="141.5999755859375" text="Начало рабочего дня" />
+            <TableColumn fx:id="workEndCol" prefWidth="151.20004882812498" text="Конец рабочего дня" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
